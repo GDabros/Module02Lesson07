@@ -169,7 +169,7 @@ double sideC = double.Parse(Console.ReadLine());
 if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA)
     Console.WriteLine("Z podanych wartości powstanie trójkąt!");
 else
-    Console.WriteLine("Z podanych wartości nie powstani e trójkąt.");
+    Console.WriteLine("Z podanych wartości nie powstanie trójkąt.");
 
 
 // Exercise 11
@@ -236,7 +236,6 @@ switch (weekDay)
         break;
 }
 
-
 // Exercise 13
 
 Console.WriteLine("Możliwe operacja do wykonania:\n1. Dodawanie\n2. Odejmowanie\n3. Mnożenie\n4. Dzielenie");
@@ -263,6 +262,7 @@ else if (operation == 4)
     result = value1 / value2;
         if (value2 == 0)
             Console.WriteLine("Nie dzielimy przez 0");
+    return;
 }
 else
     Console.WriteLine("Nieprawidłowy numer operacji.");
